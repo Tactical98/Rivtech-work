@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;    
+
+    nav {        
+      ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+
+            li {
+                margin: 50px;
+            }
+        }       
+
+    }
+    .fa-bars {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: aqua;
+    main {
+        nav {
+            display: none;
+        }
+        .fa-bars {
+            display: block;
+        }
+    }
+}
+}
+
+// @media screen and (max-width: 600px) {
+//     .fa-bars {}
+// }
